@@ -8,34 +8,54 @@
   
   <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- My own CSS -->
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-  <div class="card" role="maincontent">
-    <div class="txtBx"></div>
-    <div class="imgBx"></div>
-  </div>
-  Order Summary
+  <div class="wrapper">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+    <div class="card shadow">
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://blissful-banach-06fb18.netlify.app/">montyaction</a>.
+      <img src="./images/illustration-hero.svg" class="img-fluid" alt="Music illustration">
+  
+      <div class="text-content">
+  
+        <div class="card-body">
+          <h5 class="card-title text-center txt-color-b">Order Summary</h5>
+          <p class="card-text text-center txt-color-d">You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!</p>
+        </div>
+    
+        <div class="card-body less-height">
+          <div class="grid-container">
+            <img class="grid-item item1" src="./images/icon-music.svg" alt="music_icon">
+            <span class="grid-item item2 txt-color-b">Annual Plan</span>
+            <span class="grid-item item3 txt-color-d">$59.99/year</span>
+            <span class="grid-item item4 txt-color-d"><a href="#">Change</a></span>
+          </div>
+    
+        </div>  
+    
+        <div class="d-grid gap-2 card-body">
+          <button href="#" class="btn bright-blue shadow" type="button">Proceed to Payment</button>
+          <button href="#" class="btn none" type="button">Cancel Order</button>
+        </div>
+  
+      </div>
+  
+    </div>
+  
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://blissful-banach-06fb18.netlify.app/">montyaction</a>.
+    </div>
+
   </div>
 </body>
 </html>

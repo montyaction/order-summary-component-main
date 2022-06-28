@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --baigani: hsl(245, 86%, 72%);
+
+    --very-pale-blue: hsl(255, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    
+    --bs-gray: #6c757d;
+    --bs-black: #000;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+}
+.txt-color-b {
+    color: var(--bg-black);
+}
+.txt-color-d {
+    color: var(--bs-gray-700);
+}
+body {
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(./images/pattern-background-desktop.svg);
+
+}
+.wrapper {
+    margin-top: 20px;
+}
+.card {
+    width: 25rem;
+    border-radius: 15px;
+}
+/* // Small devices (landscape phones, 400px and dwon) */
+@media (max-width: 400px) {
+    .card {
+        width: 23rem;
+    }
+}
+@media (max-width: 375px) {
+    .card {
+        width: 21rem;
+    }
+    .text-content{
+        margin: 10px;
+    }
+    h5 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 14.5px;
+        padding: 10px 8px 0 8px !important;
+    }
+}
+
+.img-fluid {
+    border-radius: 15px 15px 0px 0px;
+}
+
+h5 {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.text-content {
+       margin: 20px;
+}
+p {
+    padding: 10px 10px 0 10px;
+}
+.less-height {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'music-icon annual change'
+    'music-icon price change';
+    padding:15px;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+}
+.item1 {
+     grid-area: music-icon;
+}
+.item2 {
+     grid-area: annual;
+     font-weight: 700;
+}
+.item3 {
+     grid-area: price; 
+}
+.item4 {
+     grid-area: change;
+     display: flex;
+     align-items: center;
+     justify-content: end;
+}
+.item4 a:hover {
+    text-decoration: none;
+    color: var(--baigani);
+}
+.bright-blue {
+    color: var(--pale-blue);
+    background-color: var(--bright-blue);
+}
+.bright-blue:hover {
+    color: var(--pale-blue);
+    background-color: var(--baigani);
+}
+.none {
+    font-weight: 700;
+    color: var(--bs-gray-600);
+}
+.none:hover {
+    border: 0;
+    color: var(--bs-black);
+}
+
+.attribution { 
+    margin-top: 10px;
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
